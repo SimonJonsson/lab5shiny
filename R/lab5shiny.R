@@ -18,7 +18,6 @@ viz <- elect_viz$new(path = "2014_riksdagsval_per_valdistrikt.xls")
 
 #' The UI for the shiny application
 #' @return a fluidPage object
-#' @export
 ui <- fluidPage(
   titlePanel("Swedish Election Results"),
   sidebarLayout(
