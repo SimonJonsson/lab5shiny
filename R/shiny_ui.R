@@ -1,5 +1,17 @@
-sheet <- read_excel("data/2014_riksdagsval_per_valdistrikt.xls")
-viz <- elect_viz$new(data = sheet)
+#' @title Visual Interaction Tool For Swedish Election Results
+#'
+#' @description
+#' Implements an interactive tool for the Swedish election results where you can
+#' see the results for each muniplicity. The default select is Stockholms Kommun.
+#' Uses the elect_viz package
+#'
+#' @name lab5shiny
+#' @docType package
+NULL
+
+devtools::install_github("SimonJonsson/lab5")
+library(lab5)
+viz <- elect_viz$new(path = "2014_riksdagsval_per_valdistrikt.xls")
 
 #' The UI for the shiny application
 #' @return a fluidPage object
@@ -42,20 +54,3 @@ server <- function(input, output) {
 }
 
 shinyApp(ui = ui, server = server)
-
-#' Dataset containing all the election results of each election district from the Swedish elections 2014
-#' @name 2014_riksdagsval_per_valdistrikt.xls
-#' @source \url{http://www.val.se/val/val2014/statistik/index.html}
-NULL
-
-#' @title Visual Interaction Tool For Swedish Election Results
-#'
-#' @description
-#' Implements an interactive tool for the Swedish election results where you can
-#' see the results for each muniplicity. The default select is Stockholms Kommun.
-#' Uses the elect_viz package
-#'
-#' @name lab5
-#' @docType package
-NULL
-
