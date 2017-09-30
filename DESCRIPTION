@@ -10,5 +10,5 @@ Description: Implements an interactive tool for the Swedish election results whe
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Depends: R (>= 2.1.0), shiny, devtools, readxl
+Depends: R (>= 2.1.0), shiny, devtools, readxl, httr
 RoxygenNote: 6.0.1
