@@ -11,6 +11,9 @@ NULL
 
 devtools::install_github("SimonJonsson/lab5")
 library(lab5)
+
+#' The RC class to interface with the data
+#' @return RC class object elect_viz
 viz <- elect_viz$new(path = "2014_riksdagsval_per_valdistrikt.xls")
 
 #' The UI for the shiny application
