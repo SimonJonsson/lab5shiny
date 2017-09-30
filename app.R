@@ -11,7 +11,7 @@ ui <- fluidPage(
   titlePanel("Swedish Election Results"),
   sidebarLayout(
     sidebarPanel(
-      selectInput(inputId = "county", label = strong("Trend index"),
+      selectInput(inputId = "county", label = strong("County"),
                   choices = viz$get_counties(),
                   selected = viz$get_county())
     ),
